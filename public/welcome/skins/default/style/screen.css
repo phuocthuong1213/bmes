@@ -1,0 +1,52 @@
+/* -- Imported styles ----------------------------- */
+@import url("global.css");
+@import url("style.css");
+@import url("box.css");
+
+
+
+
+/*Thai Son*/
+.box-media {
+  margin-bottom: 15px;
+}
+.imgDetail_left {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.imgDetail_right {
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+
+.fDespic {
+  background: #f5f5f5 none repeat scroll 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px;
+}
+
+.relate_news {
+  font-weight:bold;
+  color:#5F5F5F;
+
+}
+.relate_news a {color:#d40050; text-decoration:underline; font-size: 12px;}
+
+
+.logo-bct img {
+  max-height: 60px;
+  width: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .imgDetail_left {
+  	width: 100% !important;
+  	float: none;
+  	margin-right: 0 ;
+  	margin-bottom: 15px !important;
+  }
+}
