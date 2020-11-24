@@ -1,7 +1,7 @@
 <?php
 
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@welcome');
 Route::get('/gioi-thieu', 'WelcomeController@index');
 Route::get('/kho-ung-dung', 'HomeController@listapp');
 Route::get('/error_404',['as'=>'error_404','uses'=>'HomeController@error_404']);

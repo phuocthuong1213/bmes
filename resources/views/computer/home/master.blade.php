@@ -137,12 +137,6 @@
                             </div>
                         </nav>
                     </div>
-                    <ul class="top-social col-md-3 col-sm-3">
-                      @foreach($languages as $item)
-                      <?php $active = (Session::get("idlocale") == $item->id)?" active ":"" ?>
-                      <li class="{{ $active }}"><a href="{{ url('setlocale/'.$item->id) }}"><img src="{{ asset('public/img/lang/'.$item->img) }}"></a></li>
-                      @endforeach
-                    </ul>
                 </div>
             </div><!-- container /- -->
         </div><!-- top-header /- -->
@@ -156,11 +150,10 @@
                         <a href="{{ url("") }}"><img src="{{ asset('public/img/logoNT7solution.png') }}" alt="no logo"></a>                        
                     </div>
                     <div class="col-md-6 col-sm-6 nt7-padding-top">
-                        <form action="{{ url('/search') }}"> 
+                        <form action="{{ url('/search') }}" style="padding-top: 5px"> 
                             <div class="form-group has-deflaut has-feedback">
                               <input type="text" class="form-control" id="inputSuccess2" name="key" aria-describedby="inputSuccess2Status" placeholder="Nhập từ khóa để tìm kiếm sản phẩm, hướng dẫn kỹ thuật, tin tức..." style="border: 1px solid #1d769c;">
                               <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                              <label class="control-label" for="inputSuccess2" style="color:#de3737;">android tv box, tv box, micro hát karaoke, con quay spinner...</label>
                             </div>
                         </form>
                     </div>
@@ -276,7 +269,7 @@
                                                 </li>
                                             @endforeach  
                                             <li class="dropdown mega-dropdown hidden-xs hidden-sm ">
-                                                 <a href="{{ url('/kho-ung-dung') }}" class="dropdown-toggle" style="text-transform: uppercase;">Kho ứng dụng </a>
+                                                 <a href="{{ url('/kho-ung-dung') }}" class="dropdown-toggle" style="text-transform: uppercase;">Báo giá</a>
                                             </li>                                          
                                             <li class="dropdown mega-dropdown hidden-xs hidden-sm ">
                                                  <a href="{{ url('/contact') }}" class="dropdown-toggle" style="text-transform: uppercase;">Liên Hệ </a>
